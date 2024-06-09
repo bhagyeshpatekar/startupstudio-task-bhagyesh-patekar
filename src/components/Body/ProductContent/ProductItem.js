@@ -35,11 +35,11 @@ const ProductItem = ({ product }) => {
       <div className="card-body">
         <h5 className="card-title">{product.name}</h5>
         <p className="card-text">
-          <a className="text-decoration-none" href="#">
+          <a className="text-decoration-none" href="/signin">
             Sign in
           </a>{" "}
           or
-          <a className="text-decoration-none" href="#">
+          <a className="text-decoration-none" href="/create-account">
             {" "}
             Create an account
           </a>{" "}
