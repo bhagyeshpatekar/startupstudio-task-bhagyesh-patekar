@@ -1,0 +1,49 @@
+img {
+  max-width: 100%;
+  height: auto;
+  width: 2rem;
+}
+
+svg {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #f8f9fa;
+}
+
+.header .icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header-link {
+  margin: 0 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.options {
+  padding: 0rem 2rem 0rem 2rem;
+  cursor: pointer;
+}
+
+.options :hover {
+  border: 1px solid black;
+}
+
+.startup-studio {
+  width: 10rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+        .startup-studio {
+          width: 5rem;
+            cursor: pointer;
+            height: 5rem;
+          }
+        }
+               

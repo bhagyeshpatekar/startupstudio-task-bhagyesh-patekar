@@ -1,0 +1,68 @@
+footer h2,
+p {
+  text-align: left;
+}
+
+.input-field {
+  height: 2.5rem;
+}
+
+.currency-display {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.currency-flag {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.currency-code {
+  font-size: 16px;
+}
+
+.payment-icons {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 4rem;
+  margin-right: 0.2rem;
+}
+
+.payment-icons img {
+  max-width: 100%;
+  height: 30px;
+  width: 46px;
+}
+
+.social-icons {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 4rem;
+  margin-right: 0.2rem;
+}
+
+.social-icons img {
+  max-width: 100%;
+  height: 30px;
+  width: 46px;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+  padding-left: 1rem;
+}
+
+p:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  cursor: pointer;
+}
+
+.payment-icons :hover,
+.social-icons :hover {
+  cursor: pointer;
+}

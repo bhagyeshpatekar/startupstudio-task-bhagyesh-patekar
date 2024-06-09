@@ -1,0 +1,29 @@
+.scroll-button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar-options p {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.sidebar-options p:hover {
+    background-color: #f0f0f0;
+}
