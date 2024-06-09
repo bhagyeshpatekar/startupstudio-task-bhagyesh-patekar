@@ -33,7 +33,7 @@ const Header = ({ onSearchChange, onContactUsClick }) => {
           <div className="col-4 text-start d-flex">
             {isMobile ? (
               <>
-                <div className="col-2">
+                <div className="col-4">
                   <MobileSideBar onContactUsClick={onContactUsClick} />
                 </div>
                 <div className="col-2" style={{ paddingTop: "0.2rem" }}>
