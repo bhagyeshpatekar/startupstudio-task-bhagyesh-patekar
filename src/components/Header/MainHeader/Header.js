@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import './Header.css';
-import { BsSearch, BsHeart, BsBag } from 'react-icons/bs';
-import { BiUser } from 'react-icons/bi';
-import logo from '../../images/logo.png';
-import { MdOutlineCancel } from 'react-icons/md';
-import startUpStudiologo from '../../images/startUpStudiologo.png';
-import { isMobile } from 'react-device-detect';
-import MobileSideBar from '../../SideBar/MobileSideBar';
+import React, { useState } from "react";
+import "./Header.css";
+import { BsSearch, BsHeart, BsBag } from "react-icons/bs";
+import { BiUser } from "react-icons/bi";
+import logo from "../../images/logo.png";
+import { MdOutlineCancel } from "react-icons/md";
+import startUpStudiologo from "../../images/startUpStudiologo.png";
+import { isMobile } from "react-device-detect";
+import MobileSideBar from "../../SideBar/MobileSideBar";
 
 const Header = ({ onSearchChange, onContactUsClick }) => {
   const [isSearch, setIsSearch] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleInputChange = (event) => {
     const query = event.target.value;
@@ -20,8 +20,8 @@ const Header = ({ onSearchChange, onContactUsClick }) => {
 
   const handleSearchClick = () => {
     if (isSearch) {
-      setSearchQuery('');
-      onSearchChange('');
+      setSearchQuery("");
+      onSearchChange("");
     }
     setIsSearch(!isSearch);
   };
@@ -36,7 +36,7 @@ const Header = ({ onSearchChange, onContactUsClick }) => {
                 <div className="col-2">
                   <MobileSideBar onContactUsClick={onContactUsClick} />
                 </div>
-                <div className="col-2" style={{ 'padding-top': '0.2rem' }}>
+                <div className="col-2" style={{ paddingTop: "0.2rem" }}>
                   <img src={logo} alt="Logo" className="img-fluid" />
                 </div>
               </>
@@ -52,7 +52,7 @@ const Header = ({ onSearchChange, onContactUsClick }) => {
             />
           </div>
           <div
-            className={isMobile ? 'col-4 text-end d-flex' : 'col-4 text-end'}
+            className={isMobile ? "col-4 text-end d-flex" : "col-4 text-end"}
           >
             {isSearch && (
               <input
@@ -65,12 +65,12 @@ const Header = ({ onSearchChange, onContactUsClick }) => {
             )}
             {!isSearch ? (
               <BsSearch
-                className={!isMobile && 'me-2'}
+                className={!isMobile && "me-2"}
                 onClick={handleSearchClick}
               />
             ) : (
               <MdOutlineCancel
-                className={!isMobile && 'me-2'}
+                className={!isMobile && "me-2"}
                 onClick={handleSearchClick}
               />
             )}
